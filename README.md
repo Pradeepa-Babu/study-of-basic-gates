@@ -65,24 +65,24 @@ Y= A⊕B
 **PROGRAM**
 ```
 module Gate_1 (
-    input  wire a,     // Input A
-    input  wire b,     // Input B
+    input  wire a,   
+    input  wire b,    
     output wire and_out,
     output wire or_out,
-    output wire not_out,   // only on A
+    output wire not_out,  
     output wire nand_out,
     output wire nor_out,
     output wire xor_out,
     output wire xnor_out
 );
 
-    assign and_out  = a & b;      // AND gate
-    assign or_out   = a | b;      // OR gate
-    assign not_out  = ~a;         // NOT gate (on input A)
-    assign nand_out = ~(a & b);   // NAND gate
-    assign nor_out  = ~(a | b);   // NOR gate
-    assign xor_out  = a ^ b;      // XOR gate
-    assign xnor_out = ~(a ^ b);   // XNOR gate
+    assign and_out  = a & b;      
+    assign or_out   = a | b;     
+    assign not_out  = ~a;     
+    assign nand_out = ~(a & b); 
+    assign nor_out  = ~(a | b);
+    assign xor_out  = a ^ b; 
+    assign xnor_out = ~(a ^ b);
 
 endmodule
 ```
